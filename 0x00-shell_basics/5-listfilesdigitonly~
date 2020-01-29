@@ -1,0 +1,5 @@
+#!/bin/bash
+ls -l -a -n
+#!/bin/bash
+ls -l -a -n
+
