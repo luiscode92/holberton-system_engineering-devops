@@ -1,5 +1,5 @@
-.\" Manpage for nuseradd.
-.\" Contact vivek@nixcraft.net.in to correct errors or typos.
+.\" 
+.\" 
 .TH man 2 "06 May 2010" "0.32" "Holberton man page"
 .SH NAME
 holberton \- become a full-stack software engineer 
