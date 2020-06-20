@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# this script gives information about the holb 
+FILE=holbertonschool
+if [ -e "$FILE" ]
+then
+    echo "$FILE file exist"
+
+    if [ -s "$FILE" ]
+    then
+        echo "$FILE file is not empty"
+    else
+        echo "$FILE file is empty"
+    fi 
+
+    if [ -f "$FILE" ]
+    then 
+        echo "$FILE is a regular file"
+    fi
+else
+    echo "$FILE file does not exist"
+fi
