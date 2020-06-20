@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# script that displays content of the current directory
+for i in *
+do
+    i=${i#*-}
+    echo "$i"
+done
