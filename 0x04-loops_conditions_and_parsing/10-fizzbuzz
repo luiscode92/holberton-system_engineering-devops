@@ -3,13 +3,13 @@
 n=1
 while [ $n -le 100 ]
 do
-    if (($n % 15 == 0))
+    if ($n % 15 == 0)
     then
         echo "FizzBuzz"
-    elif (($n % 5 == 0))
+    elif ($n % 5 == 0)
     then    
         echo "Buzz"
-    elif (($n % 3 == 0))
+    elif ($n % 3 == 0)
     then
         echo "Fizz"
     else 
