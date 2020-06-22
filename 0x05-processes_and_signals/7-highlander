@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#script that displays "To infinity and beyond, indefinitely and prints "i am invincble when recieve a signal
+while true
+do
+	echo "To infinity and beyond"
+	trap 'echo "I am invincible!!!"' SIGTERM
+	sleep 2
+done
