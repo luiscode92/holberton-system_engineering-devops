@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#write a bash script that uses ssh to connnect to your server using the private key ~/.ssh/holberton with the suser ubuntu.
+
+sudo ssh -i ~/.ssh/holberton ubuntu@35.196.176.105
