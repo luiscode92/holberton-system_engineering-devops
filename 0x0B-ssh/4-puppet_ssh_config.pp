@@ -6,7 +6,7 @@ file_line { 'Use private key':
   line => 'IdentityFile ~/.ssh/holberton',
 }
 
-file_line { 'Refuse password',
+file_line { 'Refuse password':
   path => '/etc/ssh/ssh_config',
   line => 'PasswordAuthentication no',
 }
