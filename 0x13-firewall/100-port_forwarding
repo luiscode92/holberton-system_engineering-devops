@@ -1,0 +1,29 @@
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -               
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      -               
+tcp6       0      0 :::22                   :::*                    LISTEN      -               
+tcp6       0      0 :::80                   :::*                    LISTEN      -               
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           -               
+udp        0      0 10.10.0.155:123         0.0.0.0:*                           -               
+udp        0      0 127.0.0.1:123           0.0.0.0:*                           -               
+udp        0      0 0.0.0.0:123             0.0.0.0:*                           -               
+udp6       0      0 fe80::4001:aff:fe0a:123 :::*                                -               
+udp6       0      0 ::1:123                 :::*                                -               
+udp6       0      0 :::123                  :::*                                -               
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  2      [ ACC ]     STREAM     LISTENING     249452   8412/systemd        /run/user/1000/systemd/private
+unix  2      [ ACC ]     SEQPACKET  LISTENING     11727    -                   /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     249456   8412/systemd        /run/user/1000/snapd-session-agent.socket
+unix  2      [ ACC ]     STREAM     LISTENING     11720    -                   /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     11725    -                   /run/systemd/journal/stdout
+unix  2      [ ACC ]     STREAM     LISTENING     11947    -                   /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     11988    -                   /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     15945    -                   /var/lib/lxd/unix.socket
+unix  2      [ ACC ]     STREAM     LISTENING     106365   -                   /run/snapd-snap.socket
+unix  2      [ ACC ]     STREAM     LISTENING     15948    -                   /run/acpid.socket
+unix  2      [ ACC ]     STREAM     LISTENING     15954    -                   /run/uuidd/request
+unix  2      [ ACC ]     STREAM     LISTENING     16031    -                   @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     15955    -                   /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     106364   -                   /run/snapd.socket
