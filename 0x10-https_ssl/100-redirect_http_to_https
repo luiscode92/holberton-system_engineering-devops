@@ -38,8 +38,8 @@ defaults
 backend web-backend
         balance roundrobin
         redirect scheme https code 301 if !{ ssl_fc }
-        server 800-web-01 35.196.121.183:80 check
-        server 800-web-02 35.196.239.45:80 check
+        server 1571-web-01 35.196.121.183:80 check
+        server 1571-web-02 34.73.220.28:80 check
 
 frontend http
         bind *:80
@@ -47,6 +47,6 @@ frontend http
         default_backend web-backend
 
 frontend https
-        bind *:443 ssl crt /etc/haproxy/ssl/www.brentmuha.tech.pem
+        bind *:443 ssl crt /etc/haproxy/ssl/www.luiscode.tech
         reqadd X-Forwarded-Proto:\ https
         default_backend web-backend
