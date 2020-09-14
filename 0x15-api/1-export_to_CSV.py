@@ -12,7 +12,7 @@ if __name__ == '__main__':
     resp = requests.get('https://jsonplaceholder.typicode.com/todos?userId={}'.format(argv[1]))
     data = resp.json()
 
-    with open('{}.csv'.format(argv[1]), mode='w') as File:
+    with open('{}.csv'.format(argv[1]), newline='', mode='w') as File:
         writer = csv.writer(File, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
         for task in data:
             writer.writerow([argv[1], username, task.get('completed'), task.get('title')])
