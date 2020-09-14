@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """ script that given a emplyee ID, return info about todo list
 """
-if __name__ == '__main__':
-    import requests
-    from sys import argv
+import requests
+from sys import argv
 
+
+if __name__ == '__main__':
     resp = requests.get('https://jsonplaceholder.typicode.com/users/{}'.format(argv[1]))
     name = resp.json().get('name')
     resp = requests.get('https://jsonplaceholder.typicode.com/todos?userId={}'.format(argv[1]))
