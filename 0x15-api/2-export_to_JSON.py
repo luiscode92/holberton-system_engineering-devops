@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ script that given a emplyee ID, return info about todo list
 """
-if __name__ == __name__:
+if __name__ == '__main__':
 
     import requests
     from sys import argv
@@ -19,6 +19,8 @@ if __name__ == __name__:
             'task': task.get('title'),
             'completed': task.get('completed'),
             'username': username
+            
+            
         })
     with open('{}.json'.format(argv[1]), mode='w') as file:
         json.dump(export, file)
